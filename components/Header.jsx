@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { HeartIcon, ShoppingCartIcon } from '@heroicons/react/outline';
-import { SearchIcon } from '@heroicons/react/solid';
+import { SearchIcon, ChevronDownIcon } from '@heroicons/react/solid';
 const Header = () => {
     return (
         <header className="flex justify-between items-center w-screen px-40 py-2">
@@ -17,6 +17,10 @@ const Header = () => {
                         type="text" 
                     />
                 </div>
+                <button className="flex items-center outline-none">
+                    <span>Login</span>
+                    <ChevronDownIcon className="icon ml-1" />
+                </button>
                 <HeartIcon className="icon" />
                 <ShoppingCartIcon className="icon" />
             </div>

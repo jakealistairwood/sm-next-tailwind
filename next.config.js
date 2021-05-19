@@ -1,3 +1,5 @@
+const withImages = require('next-images')
+
 module.exports = {
     images: {
       domains: 
@@ -11,3 +13,5 @@ module.exports = {
     ],
     },
   }
+  
+module.exports = withImages()
