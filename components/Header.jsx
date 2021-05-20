@@ -1,9 +1,10 @@
 import Image from 'next/image';
 import { HeartIcon, ShoppingCartIcon } from '@heroicons/react/outline';
 import { SearchIcon, ChevronDownIcon } from '@heroicons/react/solid';
-const Header = () => {
+
+const Header = ({ active, setActive, handleLoginModal }) => {
     return (
-        <header className="flex justify-between items-center w-screen px-40 py-2">
+        <header className="flex justify-between items-center w-screen px-40 py-2 bg-white">
             <Image 
                 src="/img/sm-logo.png" 
                 height={70} 
@@ -17,7 +18,10 @@ const Header = () => {
                         type="text" 
                     />
                 </div>
-                <button className="flex items-center outline-none">
+                <button 
+                    className="flex items-center outline-none"
+                    onClick={handleLoginModal}
+                >
                     <span>Login</span>
                     <ChevronDownIcon className="icon ml-1" />
                 </button>

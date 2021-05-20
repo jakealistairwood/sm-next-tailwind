@@ -6,10 +6,26 @@
   body {
     @apply bg-[#fafafa]
   }
+
+  a, li {
+    @apply cursor-pointer
+  }
+
+  p {
+    @apply font-Lato
+  }
+
+  h2, h3, h4, h5, h6 {
+    @apply font-BarlowCondensed
+  }
 }
 
 @layer components {
   .icon {
     @apply h-6 text-gray-500
+  }
+
+  .navLink {
+    @apply uppercase text-base font-BarlowCondensed tracking-wide
   }
 }
